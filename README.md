@@ -4,10 +4,10 @@ A simple Monte Carlo portfolio simulator built with Streamlit.
 
 You can adjust:
 
-* market returns and volatility
-* a higher-risk allocation
-* leverage
-* time horizon
+- market returns and volatility
+- a higher-risk allocation
+- leverage
+- time horizon
 
 The app then simulates different portfolio paths and shows possible outcomes.
 
