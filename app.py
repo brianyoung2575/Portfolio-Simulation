@@ -17,7 +17,7 @@ Both components are combined to form the portfolio with your chosen allocation
 #Parameters
 log_scale = st.sidebar.checkbox("Log Y-Axis Scale")
 years = st.sidebar.slider("Years", 1, 40, 5)
-simulations = st.sidebar.slider("Simulations", 25, 2000, 250, step=25)
+simulations = st.sidebar.slider("Simulations", 100, 5000, 2500, step=100)
 
 initial_capital = st.sidebar.number_input("Initial Capital", value=10000)
 
