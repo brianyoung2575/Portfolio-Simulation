@@ -77,7 +77,7 @@ for path in all_paths:
     ax.plot(path, alpha=0.3)
 ax.set_title("Portfolio Simulation Paths")
 ax.set_xlabel("Year")
-ax.set_ylabel("Value ($) (Log Scale)")
+ax.set_ylabel("Value ($)")
 if log_scale:
     ax.set_yscale("log")
 ax.yaxis.set_major_formatter(FuncFormatter(format_dollars))
