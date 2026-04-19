@@ -59,8 +59,13 @@ final_values = np.array(final_values)
 st.subheader("Statistics")
 mean_gain_pct = ((np.mean(final_values)-initial_capital)/initial_capital)*100
 median_gain_pct = ((np.median(final_values)-initial_capital)/initial_capital)*100
+cagr = (final_values / initial_capital) ** (1 / years) - 1
+mean_cagr = np.mean(cagr)
+median_cagr = np.median(cagr)
 st.markdown(f"**Mean:** ${np.mean(final_values):,.2f} ({mean_gain_pct:+.2f}%)")
+st.markdown(f"**Mean CAGR:** {mean_cagr*100:+.2f}%")
 st.markdown(f"**Median:** ${np.median(final_values):,.2f} ({median_gain_pct:+.2f}%)")
+st.markdown(f"**Median CAGR:** {median_cagr*100:+.2f}%")
 st.markdown(f"**Probability of losing:** {np.mean(final_values < initial_capital)*100:.2f}%")
 
 #Plots
